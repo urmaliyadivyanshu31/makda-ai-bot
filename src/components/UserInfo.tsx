@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserData } from '../types';
+import { UserData } from '../types/types';
 
 interface UserInfoProps {
   userData: UserData;

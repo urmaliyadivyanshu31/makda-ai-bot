@@ -1,11 +1,11 @@
-// App.tsx or App.js
+// src/App.tsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import HomeScreen from './pages/HomeScreen';
 import TasksScreen from './pages/TasksScreen';
 import FriendsScreen from './pages/FriendsScreen';
-
+import { UserData } from './types/types'
 // Define the userData variable
 const userData: UserData = {
   age: 25,
@@ -14,7 +14,7 @@ const userData: UserData = {
   points: 500, // Example value
 };
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <Router>
       <Routes>
